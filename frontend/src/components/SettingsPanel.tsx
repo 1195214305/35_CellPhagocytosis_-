@@ -92,7 +92,8 @@ const SettingsPanel = ({ onClose }: SettingsPanelProps) => {
             <h3 className="text-lg font-semibold text-bio-text mb-4">学习进度</h3>
             <div className="space-y-4">
               {Object.entries(PROCESS_INFO).map(([key, info]) => {
-                const progress = useAppStore.getState().learningProgress[key as keyof typeof useAppStore.getState().learningProgress]
+                const learningProgress = useAppStore.getState().learningProgress
+                const progress = learningProgress[key as 'endocytosis' | 'exocytosis']
                 return (
                   <div key={key}>
                     <div className="flex items-center justify-between mb-2">
