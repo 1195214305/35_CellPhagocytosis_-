@@ -1,0 +1,9 @@
+{
+  "name": "cell-phagocytosis",
+  "version": "1.0.0",
+  "description": "从"吃"到"扔"：解码细胞世界的吞吐法则",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ]
+}
